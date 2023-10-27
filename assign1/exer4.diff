@@ -1,0 +1,158 @@
+--- exer1.html	2023-10-07 16:20:19.108997000 -0700
++++ exer4.html	2023-10-07 18:35:07.949918000 -0700
+@@ -60,14 +60,14 @@
+   href='https://www.gnu.org/software/emacs/manual/html_node/emacs/index.html'>The
+   Emacs Editor</a>, version 29.1 (2023)</li>
+ </ul>
+-
+ <!-- diff，在UNIX系統上的一個工具程式，它可以比較兩個檔案之間的不同。通常它被用來比較同一個檔案，在不同版本間的差異。它可以產生一個擴展名為.diff或.patch的檔案，這個檔案可以被另一個工具程式patch來使用。-->
+ 
++
+ </section>
+ <section>
+ <h3>Lab 1.0: Getting started with GNU/Linux and Emacs</h3>
+ 
+-<ol>
++<oL>
+   <li>Log into SEASnet.</li>
+   <li>Make sure your PATH is set correctly (see above).</li>
+   <li>Run the shell command <samp>type emacs</samp> which should
+@@ -102,7 +102,7 @@
+ <section>
+ <h3>Lab 1.1: Moving around in Emacs</h3>
+ 
+-<ol>
++<oL>
+ <li>Download a copy of the web page you’re looking at into a
+ file named <samp>assign1.html</samp>. You can do this
+ with the following shell command:
+@@ -130,7 +130,7 @@
+ <section>
+ <h3>Lab 1.2: Deleting text in Emacs</h3>
+ 
+-<ol>
++<oL>
+ <li>Use Emacs to edit the file <samp>exer2.html</samp>. The idea is to
+ delete its HTML comments; the resulting page should display the same
+ text as the original.</li>
+@@ -162,7 +162,7 @@
+ <section>
+ <h3>Lab 1.3: Inserting text in Emacs</h3>
+ 
+-<ol>
++<oL>
+ <li>Use Emacs to edit the file <samp>exer3.html</samp>.</li>
+ 
+ <li>Change the first two instances of "Assignment 1" to "Assignment 27".</li>
+@@ -201,7 +201,7 @@
+ that you should know, like copy and paste, search and replace, and undo.
+ </p>
+ 
+-<ol>
++<oL>
+ <li>Execute the command "<samp>cat exer2.html exer2.diff &gt;exer4.html</samp>"
+ to create a file <samp>exer4.html</samp> that contains a copy of <samp>exer2.html</samp> followed by a copy of <samp>exer2.diff</samp>.</li>
+ <li>Use Emacs to edit the file <samp>exer4.html</samp>.
+@@ -249,7 +249,7 @@
+ works.
+ </p>
+ 
+-<ol>
++<oL>
+ <li>
+ Where are the <samp>sh</samp>, <samp>sleep</samp>, and <samp>type</samp>
+ commands located?
+@@ -336,7 +336,7 @@
+ Do these tasks all within Emacs. Don’t use a shell subcommand
+ if you can avoid it.</p>
+ 
+-<ol>
++<oL>
+ <li>Create a new directory named "<samp>junk</samp>" that’s right under
+ your home directory.</li>
+ 
+@@ -487,11 +487,13 @@
+ 
+ <section>
+ <h2>Submit</h2>
+-
+ <!-- You can learn more about HTML comments at
+ 	<https://en.wikipedia.org/wiki/HTML_comment#Comments>.
+ 	-->
+ 
++
++
++
+ 	  <p>Submit the following files within a compressed <a href='https://en.wikipedia.org/wiki/Tar_(computing)'>tarball</a> named
+ 	    <samp>assign1.tgz</samp>.</p>
+ 
+@@ -525,6 +527,9 @@
+ <p>Or maybe more lines, if something has gone wrong.</p>
+ -<->-
+ -->
++
++
++
+ </section>
+ 
+ <footer>
+@@ -543,3 +548,59 @@
+ </body>
+ </html>
+ <!-- end of HTML resource -->
++<!--
++--- exer1.html	2023-10-07 16:20:19.108997000 -0700
+++++ exer2.html	2023-10-07 16:31:43.754577000 -0700
++@@ -61,7 +61,7 @@
++   Emacs Editor</a>, version 29.1 (2023)</li>
++ </ul>
++ 
++-<!-- diff，在UNIX系統上的一個工具程式，它可以比較兩個檔案之間的不同。通常它被用來比較同一個檔案，在不同版本間的差異。它可以產生一個擴展名為.diff或.patch的檔案，這個檔案可以被另一個工具程式patch來使用。--&gt;
+++
++ 
++ </section>
++ <section>
++@@ -89,7 +89,7 @@
++     we won’t bother with dribble files in later assignments.)</li>
++ </ol>
++ 
++-<!-- DELETE-ME DELETE-ME DELETE-ME --&gt;
+++
++ <p>
++ For the following lab exercises,
++ use intelligent ways of answering the questions. For example, if
++@@ -488,9 +488,9 @@
++ <section>
++ <h2>Submit</h2>
++ 
++-<!-- You can learn more about HTML comments at
++-	<https://en.wikipedia.org/wiki/HTML_comment#Comments>.
++-	--&gt;
+++
+++
+++
++ 
++ 	  <p>Submit the following files within a compressed <a href='https://en.wikipedia.org/wiki/Tar_(computing)'>tarball</a> named
++ 	    <samp>assign1.tgz</samp>.</p>
++@@ -521,10 +521,10 @@
++ 
++ <p>should output a list of file names that contains <samp>myspell</samp>
++   etc., with sizes and other metainformation about the files.</p>
++-<!--
++-<p>Or maybe more lines, if something has gone wrong.</p>
++--<->-
++---&gt;
+++
+++
+++
+++
++ </section>
++ 
++ <footer>
++@@ -542,4 +542,4 @@
++ 
++ </body>
++ </html>
++-<!-- end of HTML resource --&gt;
+++
++-->

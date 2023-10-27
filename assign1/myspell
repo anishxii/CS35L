@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cat ./linux.words | tr -cs 'A-Za-z' '[\n*]' | sort -u > dict
+tr -cs 'A-Za-z' '[\n*]' | sort -u | comm -23 - dict
+rm dict

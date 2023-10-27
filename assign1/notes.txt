@@ -1,0 +1,28 @@
+1. The 'sh', 'sleep', and 'type' commands are all located in /usr/bin. This was found using the 'which' command. 
+
+2. The two executable programs are 'sed' and 'seq'. 'Sed' is used to perform basic text transformations in an input stream. 'Seq' prints a sequence of numbers. This command takes the form, seq [OPTION] FIRST LAST. 
+
+3. The file which is actually executed is: "/usr/local/cs/emacs-27.1/bin/emacs-27.1" This was obtained using the 'readlink' command. 
+
+4. The version number of the "/usr/bin/gcc" program is 8.5.0. whereas the version number of the plain "gcc" program is 13.2.0. By not specifying the path of the "gcc" program, the system can use local versions of the program, which may be more recent. Multiple versions can coexist.
+
+5. The symbolic mode 'u+sx' is used to add a setuid permission on a file for the owner of the file. This allows the file to be executed with the ID of the file owner rather than only entitling the owner. The symbolic mode 'o-w' removes the write permission for all "other" users who are not associated with the group or the file.
+
+6. The outputed files are: 
+/usr/local/cs
+/usr/local/cs/bin
+/usr/local/cs/bin/.del
+/usr/local/cs/coreutils-9.4
+/usr/local/cs/coreutils-9.4/bin
+
+7. There are a total of 9,841 files in the Python source code distribution. This was obtained using the 'find' command and piping the output into the 'wc' command.
+
+8. There are a total of 379 symbolic links in the bin file path. This was determined using the command: 'find /pathname -type l | wc -l'
+
+9. The name of the oldest file is "libbz2.so" This was done by using the 'find' command with a max depth of 1 and numerically sorting the modification dates.
+
+10. Through the apropos-command functionality, we can see a list of commands with "transpose" in their title: transpose-chars, transpose-lines, transpose-paragraphs, transpose-regions, sentences, sexps, words.
+
+11. Also using the apropos-command, the yank function pastes the last piece of text copied or cut. This is done through the keystrokes, 'C-y'.
+
+12. Using ps -ejH lists a long number of currently active processes with their proper hierarchy.

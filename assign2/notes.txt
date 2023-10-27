@@ -1,0 +1,67 @@
+Anish Pal
+UID: 306045492
+
+Exercise 2.1:
+1. 14th Pefect Number is:
+14105378370671206906320795808606318988148674351471566783883867599995486774265238011410
+41933290376902515619505687098293271640877243663700871167312681593136524874506524398058
+77296207297446723295166658228846926807786652870188920867879451478364569313922060370695
+06473607357237869517647305526682625328488638371507297432446383530005313842946029657514
+3368065570759537328128
+
+which was found using the script:
+   (* (expt 2 (- 607 1))
+   (- (expt 2 607) 1)
+   )
+
+2. The number of bits needed are 1214. This was done using this script: 
+
+(setq b (+ (log (expt 2 (- 607 1)) 2)
+           (log (- (expt 2 607) 1 ) 2)
+           )
+      )
+(message "The number of bits is: %d" (+ b 1))
+
+Based on this mathematical formula, bits = 1 + log 2 (n)
+
+3. M-: done using the same ELisp expression
+
+4. Typing C-h k C-h k describes the functionality of the describe-key. Essentially describing its own keybind. "C-h k runs the command describe-key"
+
+5. Typing M-SPC runs the command "cycle-spacing" which allows users to manipulate a section of the buffer around their cursor; deleting spaces and tabs around point, leaving one space.
+
+6. 'cycle-spacing' is derived from the more general function 'just-one-space'. This was found out by using the command M-x find-function and doing an incremental search on the entire documentation.
+
+7. To use 'M-:' to use the function, open the minibuffer and enter '(just-one-space)'. This is the Lisp function which will call this function. Similarly, to use M-x, enter the name of the command.
+
+Homework: Python Scripting 
+
+1. When this script is invoked on an empty file, an IndexError is raised since the sequence deriving from the file is empty.
+
+   The full error is: 
+
+   File "randline.py", line 70, in <module>
+      main()
+   File "randline.py", line 64, in main
+      sys.stdout.write(generator.chooseline())
+   File "randline.py", line 34, in chooseline
+      return random.choice(self.lines)
+   File "/usr/lib64/python2.7/random.py", line 277, in choice
+      return seq[int(self.random() * len(seq))]  # raises IndexError if seq is empty
+   IndexError: list index out of range
+
+2. If this program is invoked with Python3 instead of Python2, a compilation error is thrown since there is incorrect syntax when it comes to exception handling. 
+
+   The error occurs in line 65:
+       except IOError as (errno, strerror)
+
+3. When my shuf.py is run with Python2, a number of syntax occurs since there are transalational differences between the two versions.
+
+4. BENCHMARK TEST
+   On  /usr/bin/python3 (Python 3.6.8): 1.099 s
+   On /usr/local/cs/bin/python3 (Python 3.12.0): 0.752 s
+
+5. CPU Version: Intel(R) Xeon(R) Silver 4116 CPU @ 2.10GHz
+
+   Operating System Version: Red Hat Enterprise Linux 8.5 (Oopta)
+
